@@ -1,0 +1,699 @@
+:root {
+    --black: 0, 0, 0;
+    --darkviolet: 62, 6, 95;
+    --lessdarkerviolet: 112, 11, 151;
+    --violet: 142, 5, 194;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(var(--black));
+    color: white;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: transparent;
+    padding: 3vh 0 2vh 0;
+}
+
+header h1 {
+    font-size: 2vw;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(var(--darkviolet));
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 5vh;
+    width: 5vw;
+    margin-left: -2px;
+}
+
+.section {
+    height: max-content;
+    padding: 30vh 0 30vh 0;
+}
+
+#welcome-section {
+    background-image: url(pexels-tima-miroshnichenko-5380678.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(var(--lessdarkerviolet), 0.5);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgb(var(--lessdarkerviolet));
+    background-color: rgb(var(--violet));
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(var(--darkviolet));
+}
+
+.welcome-text {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.developer-text {
+    font-size: 3.7vw;
+    font-weight: bold;
+}
+
+.based-text {
+    font-size: 1.7vw;
+}
+
+.bottom-margin {
+    margin-bottom: 5vh;
+}
+
+#about-image {
+    background-image: url(about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 17vh 0;
+}
+
+.hr-design {
+    border: 1px solid rgb(var(--violet));
+    height: 5px;
+    background-color: rgb(var(--violet));
+    width: 5vw;
+    margin: auto;
+}
+
+.description-text {
+    font-size: 1.2vw;
+}
+
+.violet-text {
+    color: rgb(var(--violet));
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.padding {
+    padding: 10vh 5vw;
+}
+
+.top-margin {
+    margin-top: 5vh;
+}
+
+.about-title {
+    font-size: 2.5vw
+}
+
+.set-line-height {
+    line-height: 50px;
+}
+
+#service-image {
+    background-image: url(services.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17vh 0;
+}
+
+.image-logos {
+    height: 15vh;
+    width: 15vw;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12vh 12vw;
+    grid-column-gap: 40px;
+}
+
+#services-container figure img {
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+
+#resume-image {
+    background-image: url(summary.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17vh 0;
+}
+
+.education-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    padding: 0;
+}
+
+.education-padding {
+    padding: 12vh 12vw;
+}
+
+.education-figure {
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+.years {
+    background-color: rgb(var(--darkviolet));
+    padding: 5px 10px;
+    font-size: 1vw;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    margin-bottom: 1.5vh;
+}
+
+.education-text {
+    font-size: 1.2vw;
+}
+
+.text-start {
+    text-align: right;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.skill-level {
+    height: 15px;
+    width: 100%;
+    background-color:rgb(32, 32, 32);
+    border-radius: 30px;
+}
+
+.violet {
+    background-color: rgb(var(--violet));
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.web-design {
+    width: 50%;
+}
+
+.html-css {
+    width: 95%;
+}
+
+.javascript {
+    width: 80%;
+}
+
+.bootstrap {
+    width: 60%;
+}
+
+.skills-grid {
+    grid-row-gap: 40px;
+}
+
+.span-width {
+    width: 50%;
+}
+
+.flex-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+#portfolio-image {
+    background-image: url(portfolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17vh 0;
+}
+
+#travel-page {
+    background-image: url(pexels-dominika-roseclay-1252500.jpg);
+}
+
+#portfolio a div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10vh 5vw;
+    color: transparent;
+    margin-right: 10px;
+}
+
+#tribute-page {
+    background-image: url(tribute.jpg);
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+#landing-page {
+    background-image: url('landing page.png');
+}
+
+#restaurant-website {
+    background-image: url(restaurant.jpg);
+}
+
+#technical-documentation {
+    background-image: url('javasript doumentation.png');
+}
+
+#works {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+#portfolio a div:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+#contact-image {
+    background-image: url(contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17vh 0;
+}
+
+#contact div#send-note div:has(label) {
+    margin-left: 30vw;
+    margin-bottom: 20px;
+}
+
+#send-note {
+    padding: 20px;
+}
+
+#contact div#send-note p {
+    margin-bottom: 20px;
+}
+
+#contact input {
+    width: 20vw;
+    height: 5vh;
+    padding: 20px;
+    background-color:rgb(32, 32, 32);
+    border: none;
+    color:white;
+}
+
+.right {
+   margin-right: 22px; 
+}
+
+#contact textarea {
+    width: 41vw;
+    margin-left: 30vw;
+    height: 30vh;
+    padding: 20px;
+    background-color:rgb(32, 32, 32);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    color:white;
+}
+
+#contact button {
+    margin-left: 30vw;
+    width: 41.7%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(var(--violet));
+    color:white;
+    border: none;
+}
+
+#contact button:hover {
+    background-color:rgb(var(--darkviolet));
+}
+
+@media (max-width: 1440px) {
+    header nav ul li a {
+        font-size: 1.5vw;
+    }
+
+    #service-image {
+        padding: 17vh 17vw;
+    }
+
+    .description-text {
+        font-size: 1.5rem;
+    }
+
+    .years {
+        font-size: 1.5rem;
+    }
+
+    .education-text {
+        font-size: 1.5rem;
+    }  
+    
+    #contact textarea {
+        width: 41.8vw;
+    }
+
+    #contact button {
+        width: 41.8vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+
+    .years {
+        font-size: 1rem;
+    }
+
+    .education-text {
+        font-size: 1rem;
+    }
+
+    #contact textarea {
+        width: 42.6vw;
+    }
+
+    #contact button {
+        width: 42.6vw;
+    }
+
+    #works {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+
+    #works a div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    #welcome-section {
+        background-attachment: scroll;
+    }
+
+    .set-line-height {
+        line-height: 25px;
+    }
+
+    .welcome-text {
+        font-size: 1.7rem;
+    }
+    
+    .developer-text {
+        font-size: 3rem;
+    }
+
+    .based-text {
+        font-size: 1.3rem;
+    }
+
+    .education-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    #contact textarea {
+        width: 43.6vw;
+    }
+
+    #contact button {
+        width: 43.6vw;
+    }
+}
+
+@media (max-height: 768px) and (orientation: portrait) {
+    header {
+        flex-wrap: wrap;
+    }  
+
+    #welcome-section {
+        background-attachment: scroll;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    #social-links {
+        display: none;
+    }
+
+    header nav ul {
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .description-text {
+        font-size: 1.2rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    #services-container figure img {
+        margin-left: 40%;
+    }
+
+    #contact div#send-note div:has(label) {
+        margin-left: 5vw;
+    }
+
+    #contact input {
+        display: block;
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    #contact textarea {
+        margin-left: 5vw;
+        width: 79.7vw;
+        margin-top: 0;
+    }
+
+    #contact button {
+        margin-left: 5vw;
+        width: 79.7vw;
+    }
+
+    .about-title {
+        font-size: 1rem;
+    }
+    
+    #works {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        margin-left: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    .about-title {
+        font-size: 1rem;
+    }
+
+    header nav ul {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-height: 425px) and (orientation: landscape) {
+    header {
+        flex-wrap: wrap;
+    }  
+
+    header h1 {
+        display: none;
+    }
+
+    #social-links {
+        display: none;
+    }
+
+    header nav ul {
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .description-text {
+        font-size: 1.2rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    #services-container figure img {
+        margin-left: 40%;
+    }
+
+    #contact div#send-note div:has(label) {
+        margin-left: 5vw;
+    }
+
+    #contact input {
+        display: block;
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    #contact textarea {
+        margin-left: 5vw;
+        width: 79.7vw;
+        margin-top: 0;
+    }
+
+    #contact button {
+        margin-left: 5vw;
+        width: 79.7vw;
+    }
+
+    .about-title {
+        font-size: 1rem;
+    }
+
+    header nav ul {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        margin-left: -1px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-height: 375px) and (orientation: landscape) {
+    #contact textarea {
+        height: 45vh;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px) {
+    .developer-text {
+        font-size: 2rem;
+    }
+
+    .welcome-text {
+        font-size: 1.3rem;
+    }
+
+    .based-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 320px) and (orientation: landscape) {
+    header nav ul {
+        flex-wrap: nowrap;
+    }
+}
